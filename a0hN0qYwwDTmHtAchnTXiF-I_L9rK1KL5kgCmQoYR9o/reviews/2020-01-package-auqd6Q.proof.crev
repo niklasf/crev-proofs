@@ -27,3 +27,33 @@ comment: |-
 75PpwLLwKwoBvgPWWHStxJfjuaVkl9jQ7cS1c2G15uKpWqVP8TXFu71QEuSYg_bzqaccx5jq82YgsbsKvrSWAQ
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2020-01-18T21:56:39.688904116+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: num-traits
+  version: 0.2.11
+  revision: 93ff6dc382f35d292830515156693f008bc61c6d
+  digest: siy7zPODay7BbSHKjbT0WA6uNQwRSal0t6V_5HT5kps
+review:
+  thoroughness: none
+  understanding: high
+  rating: positive
+comment: |-
+  num-traits provides traits for writing code generic over numeric types
+  and implementations for built-in numeric types. I exclusively reviewed
+  unsafe code.
+  
+  num-traits uses some instances of unsafe code. Each unsafe block has a
+  comment explaining why it is required and why it is sound. The blocks are
+  easy to understand and check locally.
+----- SIGN CREV PROOF -----
+klRoKebXcBK75bLqnzsfIiEb1dCONXMchAY0TbzsQSfr-QwIZ7sAoNSxfJgnJUdiYBXidGtP3zBFeh-2SwxeCw
+----- END CREV PROOF -----
+
