@@ -17,3 +17,22 @@ comment: |-
 n_FHPXLVI2_FhY8Yjq1V3uOiNUvNioE_ZkCrAPU0LRhgrEwFkgmFHohZxnXGnquS3oU0O6PorD6vIUhpuys0AQ
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: trust
+version: -1
+date: "2020-01-18T20:32:36.599707635+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+ids:
+  - id-type: crev
+    id: VylyTuk8CMGqIxgHixWaqfiUn3xZyzOA1wFrQ0sR1As
+    url: "https://github.com/BurntSushi/crev-proofs"
+trust: high
+comment: |-
+  Highly respected Rust developer
+----- SIGN CREV PROOF -----
+1BheBGTrh7mIWdw2OWCGZXzqzUyQNaEd-pcoJ3YrZ-pU9p5Y7Py_9K5W0NlrHpg0sqz0qmYa-sBGJIc54aD5Cw
+----- END CREV PROOF -----
+
