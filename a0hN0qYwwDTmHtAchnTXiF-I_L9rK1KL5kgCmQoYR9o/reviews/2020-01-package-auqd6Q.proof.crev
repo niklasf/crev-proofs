@@ -57,3 +57,42 @@ comment: |-
 klRoKebXcBK75bLqnzsfIiEb1dCONXMchAY0TbzsQSfr-QwIZ7sAoNSxfJgnJUdiYBXidGtP3zBFeh-2SwxeCw
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2020-01-18T22:11:06.957216393+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: lazy-init
+  version: 0.3.0
+  digest: SZ_Fxs3Cm3sOhSlIqQhjpANYyz31VnMyb0O8jKZoxqE
+review:
+  thoroughness: high
+  understanding: medium
+  rating: negative
+issues:
+  - id: "https://github.com/khuey/lazy-init/issues/9"
+    severity: high
+    comment: ""
+flags:
+  unmaintained: true
+alternatives:
+  - source: "https://crates.io"
+    name: double-checked-cell
+  - source: "https://crates.io"
+    name: lazycell
+  - source: "https://crates.io"
+    name: once_cell
+comment: |-
+  Unsound API due to a missing !Send bound, allowing data races in safe code.
+  Mitigated by the fact that most common uses will not expose this
+  vulnerability, but it is unacceptable for a crate whose entire purpose is to
+  provide safe synchronization primtives.
+----- SIGN CREV PROOF -----
+ZCoG_7HWgTXJGrKS2V_FFJPoO8o6MY061j6QJDYuT6MwGSRebqzYmtE_hfQPx6MSmXeR3g5dIPl1qr4D1ayqAw
+----- END CREV PROOF -----
+
