@@ -1,0 +1,29 @@
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2020-01-18T20:57:01.396664042+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: autocfg
+  version: 1.0.0
+  revision: 4a830b9c68b1da47088b7cecbd52e7548f22a38c
+  digest: KEXyd1pU-bv6hpOldiXjpjQu8orxOgUmB-_CSII91lI
+review:
+  thoroughness: medium
+  understanding: high
+  rating: positive
+comment: |-
+  autocfg is a small and simple crate to be used in build scripts.
+  
+  Code snippets are passed to rustc to detect if the available version supports
+  the desired features and can compile them. For completeness, it should be
+  mentioned that it would be a bad idea to use this with user inputs at
+  runtime. It is hard to do so accidantely.
+----- SIGN CREV PROOF -----
+75PpwLLwKwoBvgPWWHStxJfjuaVkl9jQ7cS1c2G15uKpWqVP8TXFu71QEuSYg_bzqaccx5jq82YgsbsKvrSWAQ
+----- END CREV PROOF -----
+
