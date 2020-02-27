@@ -170,3 +170,40 @@ comment: |-
 zRGD4aDVON4XLxC7LFBP2eoH4pqbq4IJcD6OT9gN_ZiD3-YlferBHBeMmI_QG2PqJiMnkLAN8_j3jJO831o8Aw
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2020-02-27T20:58:36.481901472+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: byteorder
+  version: 1.3.4
+  revision: eaaad370715c04d78334d6a5b49c637549c84c71
+  digest: xIXqrloZPnvGV1h16Xhz7zBbMyjI1ngxuzlfEDXRBi0
+review:
+  thoroughness: medium
+  understanding: medium
+  rating: positive
+comment: |-
+  Provides methods for encoding and decoding numbers in big-endian and
+  little-endian order.
+  
+  This is a widely used, very well tested, high quality crate.
+  
+  There are two kinds of unsafe blocks:
+  
+  (1) Integer/IEEE754 floating point casting. After bumping MSRV to 1.20.0
+  some of these can be avoided by using {f32,f64}::from_bits() from the
+  standard library.
+  
+  (2) Slice casting (via pointers). It seems to assume that for example u32,
+  i32 and f32 have compatible alignment, which is probably valid. Maybe this
+  should be noted in a comment.
+----- SIGN CREV PROOF -----
+VyU8gHyhrWpbyuWEj1AaZqesKJ7YS2E28gzdWcgf_n3bX7a-YgOoP745uQGLkiXOh4M3YWef66bu5zXUraYSCQ
+----- END CREV PROOF -----
+
