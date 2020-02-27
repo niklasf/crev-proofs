@@ -28,3 +28,33 @@ comment: |-
 esd6gD1A5dsfNm6wUWsKpKHhHsaka10SDB6wr0r6qgrrxmlgn7MPXSri559qu0K-6uq_3lEdOp6PF_QmEY9hDQ
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2020-02-27T16:53:49.667653914+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: gaviota-sys
+  version: 0.1.12
+  revision: e5f6999a28950ae363cc1d998c31238c3f4fadf4
+  digest: mCaYomElWE2NXrLikCpO9waIGqZfMJkg2uTIHBQTvFY
+review:
+  thoroughness: low
+  understanding: high
+  rating: negative
+comment: |-
+  As the author of these bindings, I would not trust the underlying C library
+  to handle malicious input. Verify the checksums of tablebase files! This is a
+  good idea anyway.
+  
+  Assuming that is done, I am quite confident in the corectness of the probing
+  results, based on years of production usage and comparison with Syzygy
+  tablebases.
+----- SIGN CREV PROOF -----
+j9vcsC_eaEnU3RIUv-sWDexvEmdlkC1-ChTKkuFezH8BqO5feQfCFnMVD_7k_sqAzzektdisDOYPwJ4XqJt0BQ
+----- END CREV PROOF -----
+
