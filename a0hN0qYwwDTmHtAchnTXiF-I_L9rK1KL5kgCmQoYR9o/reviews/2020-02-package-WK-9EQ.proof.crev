@@ -1,0 +1,30 @@
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2020-02-27T16:35:32.427251581+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: lzw
+  version: 0.10.0
+  digest: ZsnrkEoM26ersMKHH_2za2XnY_0P09HoQWzIQ_-pUXQ
+review:
+  thoroughness: low
+  understanding: medium
+  rating: positive
+comment: |-
+  An implementation of LZW compression. Overall appearance is solid.
+  
+  + No unsafe code.
+  + No unexpected panics. Indirectly fuzz tested by gif encoding crates like
+    gif and gift.
+  - Appears to be unmaintained.
+  - Could use cleanups and performance optimizations.
+  - Small test suite. Could use more roundtrip tests.
+----- SIGN CREV PROOF -----
+esd6gD1A5dsfNm6wUWsKpKHhHsaka10SDB6wr0r6qgrrxmlgn7MPXSri559qu0K-6uq_3lEdOp6PF_QmEY9hDQ
+----- END CREV PROOF -----
+
