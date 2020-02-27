@@ -207,3 +207,30 @@ comment: |-
 VyU8gHyhrWpbyuWEj1AaZqesKJ7YS2E28gzdWcgf_n3bX7a-YgOoP745uQGLkiXOh4M3YWef66bu5zXUraYSCQ
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2020-02-27T21:28:54.271187110+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: either
+  version: 1.5.3
+  revision: cd15a341118b5af765450dcb6380c6dee17ed0f2
+  digest: rTo-TzYTg8QSM1Lwtkiz5Bc6gSi8rEb0j9AU1r43kn0
+review:
+  thoroughness: medium
+  understanding: medium
+  rating: positive
+comment: |-
+  Provides enum Either<L, R> { Left(L), Right(R) }, with some convenience
+  methods and macros.
+  
+  High quality micro crate with no unsafe code.
+----- SIGN CREV PROOF -----
+rW4hGB60EPv4ytdRZ66ywHOPW0n9QLCQuHf2Ag4y7SHAW260TCy3l1uzvLvZJRaBrIPVfhJjk2RtN2ml1mUdBQ
+----- END CREV PROOF -----
+
