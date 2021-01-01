@@ -97,3 +97,27 @@ comment: |-
 mhZXerFWkE8ZLYPG-qIzAfaFO4vmJpGdYLVp8Dc_UVzGggDxz-53BaH2RhAKQiSbx1aGVpjRoVC6nu_yfQ8RAQ
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-01-01T12:28:20.325937152+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: thousands
+  version: 0.2.0
+  revision: aa1b623cdb812e649f3b4ced80e6a9adb40d2f31
+  digest: VVyzZtYJjkpITIJe13zUf3y00w-WvVQfOtvLQkL-_hw
+review:
+  thoroughness: low
+  understanding: medium
+  rating: positive
+comment: |-
+  No unsafe code, sane design and good test coverage.
+----- SIGN CREV PROOF -----
+aIVQkAQnLvq_EFCGwH8TJiyGINg1DmDez8QQ4KX-T9O3jaEAYqRWT0KYshtCIHVxgJw0r053ah0oyQUdMIuwBQ
+----- END CREV PROOF -----
+
