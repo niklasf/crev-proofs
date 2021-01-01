@@ -160,3 +160,20 @@ trust: low
 XccyL4cV_98KjYm6xdeFyZeFcOM01cgP8R5ij00ghBX-aZaOw8_tLkQkJgNAeDL3iCjDeW3wcB5ko-BUXDgiAQ
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: trust
+version: -1
+date: "2021-01-01T21:09:49.754017050+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+ids:
+  - id-type: crev
+    id: Qf4cHJBEoho61fd5zoeweyrFCIZ7Pb5X5ggc5iw4B50
+    url: "https://github.com/kornelski/crev-proofs"
+trust: low
+----- SIGN CREV PROOF -----
+fNusswqP09mrazg22fqCMSmbPBdawSi9qp-yeocOd11Nip8gdD83RM0h7ZIu5h_UbH7eR8sAnGpGB2-T4lM3CQ
+----- END CREV PROOF -----
+
