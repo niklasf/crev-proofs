@@ -1,0 +1,38 @@
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-01-01T02:46:10.782342194+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: shell-escape
+  version: 0.1.5
+  revision: 9bfec037f6fde99a7e4caf029919b0bb4b808c85
+  digest: aRvbB8m7HDX6Xx0CLfKREmHN1BgicrmOYIy-U9VN_TA
+review:
+  thoroughness: medium
+  understanding: low
+  rating: negative
+comment: |-
+  This small crate implements Windows-style and Unix-style shell escaping.
+  Its not clear which exactly are the supported shells, so its hard
+  to guarantee the escaping is safe for all possible ones (although it
+  looks fine for all common shells).
+  
+  A second worry is the runtime detection of the current shell, where an
+  environment variabe (MSYSTEM) can be used to change the escaping style to
+  Unix. For users of the crate, if the environment is known, I would recommend
+  explicitly specifying it, instead of relying on the detection.
+  
+  The exposed functions have the signature Cow<str> -> Cow<str>. It would seem
+  that &str -> Cow<str> is more natural.
+  
+  I do not know if character encodings play a role, here, and if str is the
+  correct type to be working with.
+----- SIGN CREV PROOF -----
+-3FvaQ70HIbb1W6QOTee9iTNUavsUcX0SblkBiYEcHuA9szmQ16Tn6MxKFoCMRj3u52PTVk0db8q6-5sOjUlCQ
+----- END CREV PROOF -----
+
