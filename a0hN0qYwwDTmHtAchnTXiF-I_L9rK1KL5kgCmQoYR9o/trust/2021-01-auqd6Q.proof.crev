@@ -107,3 +107,22 @@ comment: |-
 hbxc3kRbiF-eIIyt6f1B7dQvrAQ12Ogi1IkF2bl5rY3ZN26N5YYiPUybrtqh6h0L0kQZtQyflYPOyIuHSs2dDg
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: trust
+version: -1
+date: "2021-01-01T20:44:01.422858797+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+ids:
+  - id-type: crev
+    id: VylyTuk8CMGqIxgHixWaqfiUn3xZyzOA1wFrQ0sR1As
+    url: "https://github.com/BurntSushi/crev-proofs"
+trust: medium
+comment: |-
+  Reputable developer, known for multiple high quality crates.
+----- SIGN CREV PROOF -----
+CUuvyfB7rue_3VLViKTomlmudM2Q0M5IgaW9Bk5sfIeAQTGrwjbac5KPIasZt5x5CP5s-SG5cAHpwEdHRjYjDQ
+----- END CREV PROOF -----
+
