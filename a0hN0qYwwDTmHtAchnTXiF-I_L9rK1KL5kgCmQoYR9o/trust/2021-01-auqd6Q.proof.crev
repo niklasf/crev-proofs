@@ -37,3 +37,20 @@ comment: |-
 wwEGxq-uOJniYvegQpm4-S4ydTd1_bpwVTuUj_bN8wEJ7-cenDy76ln8sehAP_xauIzjwUL3wHIwcpp-dmH3Cg
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: trust
+version: -1
+date: "2021-01-01T12:12:07.981667521+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+ids:
+  - id-type: crev
+    id: bYdCa4xhd5VL4dlcVPBxV51PrW5joFp9U04rKgcTvk8
+    url: "https://gitlab.com/chrysn/crev-proofs"
+trust: low
+----- SIGN CREV PROOF -----
+KM-jcBH1uSBTiRRncr7NMAxnHNTdmd94q3Ta6v56UfHtslrjipJ87pr-FVMdtYQRtnASanFstCFTM-LUePaoCQ
+----- END CREV PROOF -----
+
