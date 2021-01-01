@@ -71,3 +71,29 @@ comment: |-
 Hb_LjL9MKCXZydnxjQsVuQTnNik3ztKhm75ghtmWRTbkdIOzFkQVgGgJ-rxkoYBR2u6JOw7VSdOqcv47TN7cCA
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-01-01T03:40:38.419480210+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: hashbrown
+  version: 0.9.1
+  revision: 34c11891e13fa3c0d08b0540e869aace9d347c26
+  digest: JqB8vwj7whRVN5wPuyWXi0BLF_Ogq2HQDHIy8oNxutw
+review:
+  thoroughness: low
+  understanding: low
+  rating: positive
+comment: |-
+  A high quality crate that is now used by the standard library. Some use cases
+  for using it directly remain, such as no_std support, and low level APIs for
+  building other datastructures.
+----- SIGN CREV PROOF -----
+mhZXerFWkE8ZLYPG-qIzAfaFO4vmJpGdYLVp8Dc_UVzGggDxz-53BaH2RhAKQiSbx1aGVpjRoVC6nu_yfQ8RAQ
+----- END CREV PROOF -----
+
