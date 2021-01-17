@@ -1,0 +1,39 @@
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-01-17T19:23:00.856183002+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: raw-cpuid
+  version: 8.1.2
+  revision: e11e40b697cb52b951d03cdd159be6e418f06d35
+  digest: 1POPik2OjGzee72ydJWWgO5acyTt3bDkVzE-cWEA1C0
+review:
+  thoroughness: high
+  understanding: medium
+  rating: negative
+comment: |-
+  The crate has multiple soundness issues.
+  
+  Most importantly, it performs transmutes that are most likely unsound or
+  at best incorrect (https://github.com/gz/rust-cpuid/issues/40).
+  
+  Further, for machines that do not support CPUID (arguably rare, when ignoring
+  SGX), it incorrectly exposes the unsafe core::arch::__cpuid_count() as a safe
+  function. (The safety requirement is that the CPUID instruction is supported,
+  https://github.com/gz/rust-cpuid/issues/41).
+  
+  Soundness issues aside, there are some minor issues.
+  
+  - The crate introduces considerable complexity (including FFI), to support
+    old rustc versions (https://github.com/gz/rust-cpuid/pull/38).
+  - Some casual use of unsafe code that can be rewritten to be safe
+    (https://github.com/gz/rust-cpuid/pull/39).
+----- SIGN CREV PROOF -----
+xPdIEEEOjuCEmMIGHpyiDq_fZfSD0kLTUhQ-KD8-U4oVU5jTuBTvo-Sipv_Qy9zbKaRPbcGVed8M-j2xK_aqDg
+----- END CREV PROOF -----
+
