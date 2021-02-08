@@ -22,3 +22,27 @@ comment: |-
 vs1CHOhdDICyk9kZvwsoDoKhcLTCi2iFww44nNkKqLBActxTDE8yScfnEG7eHXm9LSNrqpx-mCZg5aK-TAWJBw
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-02-08T19:27:46.323443011+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: configparser
+  version: 2.0.0
+  revision: c35c58b7874e73b26569d867897ba6bcb08af48a
+  digest: GP4CifYmUxD1X9mEVOErjDJuWpLDjjIk4EKBWKS16iU
+review:
+  thoroughness: low
+  understanding: medium
+  rating: positive
+comment: |-
+  Solid utilities for handling ini files. API slightly idiosyncratic.
+----- SIGN CREV PROOF -----
+Rs6YH8CwBYdv1OPKCaVkzyn1oS5TfbG5n8sdxOrR3gAgqRgwymNdIxMSkFS7OtlAsMl6fSUF9-YbJLnHf40wCg
+----- END CREV PROOF -----
+
