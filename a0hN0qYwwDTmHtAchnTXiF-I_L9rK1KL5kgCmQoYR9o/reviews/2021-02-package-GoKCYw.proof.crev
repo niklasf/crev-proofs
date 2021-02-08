@@ -1,0 +1,24 @@
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-02-08T19:17:28.762102133+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: matches
+  version: 0.1.8
+  digest: wEgXzIZmN2BvT4dl90vyR0WVYgLwYc0BETwLJ_ySYOc
+review:
+  thoroughness: high
+  understanding: high
+  rating: strong
+comment: |-
+  Straight forward utilities. The matches! macro is now part of the standard
+  library.
+----- SIGN CREV PROOF -----
+vs1CHOhdDICyk9kZvwsoDoKhcLTCi2iFww44nNkKqLBActxTDE8yScfnEG7eHXm9LSNrqpx-mCZg5aK-TAWJBw
+----- END CREV PROOF -----
+
