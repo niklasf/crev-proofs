@@ -124,3 +124,24 @@ review:
 E8nKiKLNIlaayJ4-NnnthZHchTw7SuKdG7qk4pi6Z2qvFEv3b6jt5Tszxon7jPy139DCksAxxgL5MjbTrihMDw
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-02-08T19:46:03.309871134+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: auditable-build
+  version: 0.1.0
+  digest: xaW8Br5RmcHXMsTUSUzzh6BIS2IuZJlmcC0M6EnrtFc
+review:
+  thoroughness: low
+  understanding: medium
+  rating: positive
+----- SIGN CREV PROOF -----
+jGYiMSQlr4lkXrxwhV3OjICJGTbbZHJK1uCdwzZGsVsCMvUFFkWDEgC5zvNIopq8YWiaIO_t2Bh643qtD9JzBQ
+----- END CREV PROOF -----
+
