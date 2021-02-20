@@ -145,3 +145,27 @@ review:
 jGYiMSQlr4lkXrxwhV3OjICJGTbbZHJK1uCdwzZGsVsCMvUFFkWDEgC5zvNIopq8YWiaIO_t2Bh643qtD9JzBQ
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-02-20T12:48:49.667689265+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: self_update
+  version: 0.24.0
+  revision: 38488dac6af98990f6d233054579107bcfaa741b
+  digest: 8nOsnA5mIubLCwQvMkCCxou6GIkZ5leiF_SDByjj9aw
+review:
+  thoroughness: low
+  understanding: medium
+  rating: positive
+comment: |-
+  Reviewed superficially and found not to be malicious.
+----- SIGN CREV PROOF -----
+uUI9wk4qeCjv0cRC9i1iFKQmBfUmNOTsrgICFX4nBajHpvkgRr8_o355F0blDVw5mQ9QA6aqX33H5Z956KpxCA
+----- END CREV PROOF -----
+
