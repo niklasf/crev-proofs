@@ -127,3 +127,34 @@ comment: |-
 ed6vw8dUCZIiAbtmwFz_fHnSMOty_AftK35cd6W_c4FiTcBFPg1q87QzO3hAaxM51HVia5VP_9HhV26Pl08YAQ
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-02-24T00:47:32.211140672+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: double-checked-cell
+  version: 2.1.0
+  revision: faf41e3c16982c698d204f1704b101bc7558271a
+  digest: s1a8q_vxBks3M50n2kpjG4FXZhn79ykatA5sMEl0suQ
+review:
+  thoroughness: high
+  understanding: high
+  rating: neutral
+flags:
+  unmaintained: true
+alternatives:
+  - source: "https://crates.io"
+    name: once_cell
+comment: |-
+  I am no longer maintaining this crate. Use once_cell instead.
+  Its functionality is also being considered for inclusion in the standard
+  library.
+----- SIGN CREV PROOF -----
+6eDgNiT8VMMDrXfaN5Rg1nDvY6_1DYF5uFxHa34JftOGcJskhus77TRL45y6prQS_niyvLCccKhyMXlswZl5Cg
+----- END CREV PROOF -----
+
