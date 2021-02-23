@@ -1,0 +1,35 @@
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-02-24T00:37:58.175122151+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: shakmaty
+  version: 0.18.0
+  revision: 63754abfb04170d63c91e042ab6879135a47ac02
+  digest: CVvcaKPZ0GMVg3uu6aHljL0iga_qVWwuR2tOEx1MECc
+package-diff-base:
+  source: "https://crates.io"
+  name: shakmaty
+  version: 0.17.2
+  revision: d1f33f17cd250c5354f49139808871b37a621a1f
+  digest: 9DXjVH-bBb4MSY8c6yDlUtfTg1ImScfWvJU9xoRWUEo
+review:
+  thoroughness: high
+  understanding: high
+  rating: positive
+alternatives:
+  - source: "https://crates.io"
+    name: chess
+  - source: "https://crates.io"
+    name: pleco
+comment: |-
+  Previous review still applies for this new release.
+----- SIGN CREV PROOF -----
+J1ZbCM-xWKp5eF40R42KJlWZN_esA6QD8tO1SnssKgRYH71INy420bTJCk9i1DL8_HJS7CdHqGwEqjntogVwAQ
+----- END CREV PROOF -----
+
