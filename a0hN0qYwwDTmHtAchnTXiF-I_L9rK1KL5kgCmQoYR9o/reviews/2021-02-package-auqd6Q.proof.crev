@@ -33,3 +33,61 @@ comment: |-
 J1ZbCM-xWKp5eF40R42KJlWZN_esA6QD8tO1SnssKgRYH71INy420bTJCk9i1DL8_HJS7CdHqGwEqjntogVwAQ
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-02-24T00:41:25.645461904+01:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: shakmaty-syzygy
+  version: 0.15.0
+  revision: 47ea6910670af3af2da33bdfb8bef527752109ad
+  digest: SkOFXHhPSmtd3JFKDAS5PdgHJMBoRpVl_J1vHyc2tKo
+package-diff-base:
+  source: "https://crates.io"
+  name: shakmaty-syzygy
+  version: 0.13.0
+  revision: 93d562c257e57a263b5c7555fe9a4b1024c60fe1
+  digest: VyN-KWgtOb8FX-nXnAB6OHscEpbw52dMq2CYP0Vx0yU
+review:
+  thoroughness: high
+  understanding: high
+  rating: positive
+comment: |-
+  Probes Syzygy tablebases.
+  
+  This is a self-assessment. I am the author of this crate.
+  
+  Soundness: The crate uses no unsafe code. Unlike existing implementations in
+  C/C++, I made a deliberate choice to use the safer pread instead of mmap,
+  despite performance costs.
+  
+  Panics/DOS: I carefully reviewed the code to ensure that all loops and
+  all recursion is bounded. I used fuzz testing to simulate corrupted tablebase
+  files. Nonetheless, it is best to verify the checksums of tablebase files
+  before use, if only for transmission errors.
+  
+  Correctness: The test suite compares the probe results of random and hand
+  picked positions with multiple independent implementations (in other
+  languages). The library has also been used by researchers and players
+  (through the https://lichess.org/analysis#explorer and
+  https://syzygy-tables.info frontends) for years, without reported
+  inconsistencies.
+  
+  I am gradually less confident in the implementation of variant tablebases,
+  simply because they are less popular and used less frequently.
+  
+  During the development of 7-piece Syzygy tablebases, this library was used
+  successfully to find inconsistencies in the new tablebase files. See
+  http://www.talkchess.com/forum3/viewtopic.php?start=0&t=66797&topic_view=flat
+  for details.
+  
+  The Syzygy format itself has a stellar reputation in the chess community.
+----- SIGN CREV PROOF -----
+nS4CgtUCnvajRiO_RvJOEHcCNGQERLpJrgNWOr0vNtrplPyCQFp3tcU0l2SgY2ZvXaqRaRt4j5uTpAvRkbORCQ
+----- END CREV PROOF -----
+
