@@ -34,3 +34,62 @@ comment: |-
 ElC0VI0JAwFa96F0r8Bb2WOy-AZsOsEptavqehfwB6xvuR9ynusXW6l1tXUcOwNTHS5Cu_GUuF2n_lFBNrGhAA
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-10-16T23:54:30.754870364+02:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: shakmaty
+  version: 0.20.1
+  revision: 88ade4deeaa2ad823795c598e7beb0b3e17dcd34
+  digest: OGkYk4iiQxCfXpmZP6wU__UV2RlIlpujagyRxi51VJQ
+review:
+  thoroughness: high
+  understanding: high
+  rating: positive
+alternatives:
+  - source: "https://crates.io"
+    name: chess
+  - source: "https://crates.io"
+    name: pleco
+comment: |-
+  This is a self-assessment. I am the author of this crate.
+  
+  Soundness: I am highly confident in soundness. Unfortunately, I could not
+  avoid two kinds of unsafe blocks, without major performance impact.
+  Instead, all preconditions are explained thoroughly in comments and asserted
+  with debug assertions.
+  
+  (1) The optimizer does not reliably elide bounds checks based on the
+  assumption that u64::trailing_zeros() will never be larger than 63.
+  This is important in many hot loops.
+  
+  (2) The perfect hash function for attack lookups always stays within bounds.
+  This technique is called Magic Bitboards, widely used and very well
+  understood in the chess community. When selecting magic factors, exactly this
+  assumption is tested for all possible inputs.
+  
+  Correctness: For move generation in standard chess, confidence is based
+  on a large test suite of randomly generated, as well as historical and tricky
+  positions, so called perft tests. The numbers are shared in the chess
+  community and compared across a wide array of implementations.
+  
+  I am gradually less confident in other features, especially chess variants,
+  simply because they are less popular and played less often, and Zobrist
+  hashing, a recent feature addition.
+  
+  The library has been used to parse 1 billion recorded real world games
+  (https://database.lichess.org). Some bugs have been found, but in the source
+  of the data, not this library.
+  
+  For handling of input formats (FEN, SAN, UCI) I reviewed the code thoroughly
+  and used fuzz testing to ensure absence of DOS/panics.
+----- SIGN CREV PROOF -----
+qn2El8elxLJpMwTf1UJgV7N9zQpBdPKtbf0mjNrDkTA2GXp4-ykZZv7ogkfFlB-0dPoY4P2Pb3RQ3lDGqr_sDg
+----- END CREV PROOF -----
+
