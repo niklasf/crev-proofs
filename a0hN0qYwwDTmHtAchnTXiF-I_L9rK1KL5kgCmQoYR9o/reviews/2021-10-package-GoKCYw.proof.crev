@@ -1,0 +1,36 @@
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-10-16T23:32:57.275648612+02:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: sync_wrapper
+  version: 0.1.1
+  revision: c2dbd54bbb43f0cc2cadcbbc9bdfdf31d0499f9a
+  digest: eiU2JYsXTlcLdvatLu2HoNMbsm9xj_DnQf5PRbLfVjg
+review:
+  thoroughness: medium
+  understanding: high
+  rating: strong
+comment: |-
+  Reviewed for soundness. There are two instances of unsafe code.
+  
+  One is a standard pin projection.
+  
+  The other is the primary purpose of the crate:
+  
+    unsafe impl<T> Sync for SyncWrapper<T> {}
+  
+  This is equivalent to the statement that all instances of &SyncWrapper<T>
+  can be safely sent across thread boundaries. This is true, because
+  &SyncWrapper<T> is useless. The crate allows no operations on &SyncWrapper<T>
+  alltogether. The only provided methods require &mut SyncWrapper<T> or owned
+  SyncWrapper<T>.
+----- SIGN CREV PROOF -----
+ElC0VI0JAwFa96F0r8Bb2WOy-AZsOsEptavqehfwB6xvuR9ynusXW6l1tXUcOwNTHS5Cu_GUuF2n_lFBNrGhAA
+----- END CREV PROOF -----
+
