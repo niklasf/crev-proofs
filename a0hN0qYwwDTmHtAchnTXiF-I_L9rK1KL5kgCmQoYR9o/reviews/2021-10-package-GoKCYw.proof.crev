@@ -93,3 +93,29 @@ comment: |-
 qn2El8elxLJpMwTf1UJgV7N9zQpBdPKtbf0mjNrDkTA2GXp4-ykZZv7ogkfFlB-0dPoY4P2Pb3RQ3lDGqr_sDg
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2021-10-17T00:05:54.166674723+02:00"
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: "https://github.com/niklasf/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: raw-cpuid
+  version: 10.2.0
+  revision: aaaa6e6fc07d04850f6119732b950d3a8383173b
+  digest: lpPJNg5-TcWaJq4fikB1O0Hv2UNmsQGBiEE1_zSWC0k
+review:
+  thoroughness: low
+  understanding: medium
+  rating: positive
+comment: |-
+  All soundness issues have been fixed and unsafe code is no longer used
+  casually. Some transmutes from raw CPUID data to structs remain, but now
+  with comments explaining why they are safe.
+----- SIGN CREV PROOF -----
+Amx62r4Vx261nNkQ-jF0gITwGHt-p6DL-NszehfOxG0Xe6nwFKe7q-rZ96ydRWj2JnanqO1_GQwym22qs-_dAw
+----- END CREV PROOF -----
+
