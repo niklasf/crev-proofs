@@ -1,0 +1,27 @@
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: 2023-08-22T20:08:05.141976318+02:00
+from:
+  id-type: crev
+  id: a0hN0qYwwDTmHtAchnTXiF-I_L9rK1KL5kgCmQoYR9o
+  url: https://github.com/niklasf/crev-proofs
+package:
+  source: https://crates.io
+  name: web-push
+  version: 0.10.0
+  digest: qb3H_wWjFYS0juOnRA01XWr96pABLgR3JdySRLIUPdM
+review:
+  thoroughness: low
+  understanding: high
+  rating: positive
+comment: |-
+  Send Web push messages.
+  
+  Reviewed superficially before we started using it in production at
+  lichess.org. Has proven stable and reliable, delivering millions of messages
+  over months.
+----- SIGN CREV PROOF -----
+FcUSbMvWvBIN-YC6959PU3i2GJ5f_EZuWUkjsY3uB2ax5JZq8OnTArmJXW6QiYCB4VyYCfaKs0cmshBlvJ0uCg
+----- END CREV PROOF -----
+
